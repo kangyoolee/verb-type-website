@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+
+    <title>동사원형 - 과거형 - 과거분사형</title>
+</head>
+
+<body>
+    <img src="{{ url_for('static', filename='logo.png') }}" width="245">
+    <h1 class="title"> 동사원형 - 과거형 - 과거분사형</h1><br>
+    <form method="GET" action="/verb">
+        <div>
+            <input class='verb-textbox' type="text" name="char1" placeholder="동사원형을 입력해보세요!">
+            <button class='go-button' type="submit">GO!</button>
+        </div>
+    </form>
+
+    <div>
+        <p class='verb-result'>
+            {{char1}}
+        </p>
+    </div>
+    <p class='copyright'>Copyrightⓒ2022 by <a href="https://kangyoo.kr/" target="_blank"
+            style="text-decoration:none;">kangyoolee</a></p>
+    <p class="thanks">Thank <a href="https://www.instagram.com/brightflow734/" target="_blank"
+            style="text-decoration:none;">Soyul</a> for designing the logo</p>
+    <p>깃허브 :<a href="https://github.com/kangyoolee/hcskr_timer"><i class="fab fa-github-square fa-2x"
+                style="color:black;"></i></a> 릴리즈 노트 :<a href="https://github.com/kangyoolee/hcskr_timer"><i
+                class="fas fa-sticky-note fa-2x" style="color:black;"></i></a></p>
+    <p class="warning">※ 이 웹사이트는 현재 제작중인 웹사이트입니다. ※</p>
+    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-37wfmERDLGItGPU1" data-ad-width="320"
+        data-ad-height="100"></ins>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <!-- Channel Plugin Scripts -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script>
+        (function () {
+            var w = window;
+            if (w.ChannelIO) {
+                return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+            }
+            var ch = function () {
+                ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function (args) {
+                ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+                if (w.ChannelIOInitialized) {
+                    return;
+                }
+                w.ChannelIOInitialized = true;
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+                s.charset = 'UTF-8';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+                l();
+            } else if (window.attachEvent) {
+                window.attachEvent('onload', l);
+            } else {
+                window.addEventListener('DOMContentLoaded', l, false);
+                window.addEventListener('load', l, false);
+            }
+        })();
+        ChannelIO('boot', {
+            "pluginKey": "6ffd6597-033a-4286-bca1-2b03e3b588a3"
+        });
+    </script>
+    <!-- End Channel Plugin -->
+</body>
+
+</html>

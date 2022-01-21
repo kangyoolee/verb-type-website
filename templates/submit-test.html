@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+    <title>강유의 알쓸신잡 - 과거분사형 찾아주기</title>
+</head>
+
+<body>
+    <img src="{{ url_for('static', filename='logo.png') }}" width="245">
+    <h1 class="title"> 동사원형 - 과거형 - 과거분사형</h1><br>
+    <form method="GET" action="/verb">
+        <div>
+            <input class='verb-textbox' type="text" name="char1" placeholder="동사원형을 입력해보세요!">
+            <button class='go-button' type="submit">GO!</button>
+        </div>
+    </form>
+    <div>
+        <p class='verb-result'>
+            {{char1}}
+        </p>
+    </div>
+    <p class='copyright'>Copyrightⓒ2022 by <a href="https://kangyoo.kr/" target="_blank">kangyoolee</a></p>
+    <p class="thanks">Thank <a href="https://www.instagram.com/brightflow734/" target="_blank">Soyul</a> for designing the logo</p>
+    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-LeKEtbl25PuOi0JN" data-ad-width="320"
+        data-ad-height="100"></ins>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</body>
+
+</html>
